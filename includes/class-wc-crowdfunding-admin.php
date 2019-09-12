@@ -254,7 +254,7 @@ class Alg_WC_Crowdfunding_Admin {
 		if ( ! isset( $_GET['alg_admin_notice'] ) ) {
 			return;
 		}
-		?><div class="error"><p><?php echo '<div class="message">' . sprintf( __( 'Free plugin\'s version is limited to 3 crowdfunding products enabled at the same time. Please visit <a href="%s" target="_blank">plugin\'s page</a> for more information.', 'crowdfunding-for-woocommerce' ), 'https://wpfactory.com/item/crowdfunding-woocommerce-wordpress-plugin/' ) . '</div>'; ?></p></div><?php
+		?><div class="error"><p><?php echo '<div class="message">' . sprintf( __( 'Free plugin\'s version is limited to 3 crowdfunding products enabled at the same time. Please visit <a href="%s" target="_blank">plugin\'s page</a> for more information.', 'crowdfunding-for-woocommerce' ), 'https://wpwham.com/products/crowdfunding-for-woocommerce/' ) . '</div>'; ?></p></div><?php
 	}
 
 	/**
@@ -359,7 +359,7 @@ class Alg_WC_Crowdfunding_Admin {
 			$html_v1_convert .= '<div style="border:1px dashed red;padding:5px;">';
 			$html_v1_convert .= '<h4 style="color:red;">' . __( 'Convert to Crowdfunding Product Version 2', 'crowdfunding-for-woocommerce' ) . '</h4>';
 			$html_v1_convert .= '<p>';
-			$html_v1_convert .= sprintf( __( '"Crowdfunding product" type is removed since "Crowdfunding for WooCommerce" plugin version 2.x.x. To continue using the plugin, you will need to manually change products type to variable and create product variations. You can always return back to <a href="https://downloads.wordpress.org/plugin/crowdfunding-for-woocommerce.1.2.0.zip">1.2.0 version</a>, however we do not recommend doing so, as you won\'t be able to get new updates. Please visit <a href="%s" target="_blank">plugin\'s page</a> for more information.', 'crowdfunding-for-woocommerce' ), 'https://wpfactory.com/item/crowdfunding-woocommerce-wordpress-plugin/' );
+			$html_v1_convert .= sprintf( __( '"Crowdfunding product" type is removed since "Crowdfunding for WooCommerce" plugin version 2.x.x. To continue using the plugin, you will need to manually change products type to variable and create product variations. You can always return back to <a href="https://downloads.wordpress.org/plugin/crowdfunding-for-woocommerce.1.2.0.zip">1.2.0 version</a>, however we do not recommend doing so, as you won\'t be able to get new updates. Please visit <a href="%s" target="_blank">plugin\'s page</a> for more information.', 'crowdfunding-for-woocommerce' ), 'https://wpwham.com/products/crowdfunding-for-woocommerce/' );
 			$html_v1_convert .= '</p>';
 
 			$html_v1_convert .= '<p>';

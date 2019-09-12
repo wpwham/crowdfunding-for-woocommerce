@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: Crowdfunding for WooCommerce
-Plugin URI: https://wpfactory.com/item/crowdfunding-woocommerce-wordpress-plugin/
+Plugin URI: https://wpwham.com/products/crowdfunding-for-woocommerce/
 Description: Crowdfunding products for WooCommerce.
 Version: 3.0.2
 Author: WP Wham
-Author URI: https://wpfactory.com/author/wpwham/
+Author URI: https://wpwham.com/
 Text Domain: crowdfunding-for-woocommerce
 Domain Path: /langs
 Copyright: © 2019 WP Wham
-WC tested up to: 3.6
+WC tested up to: 3.7
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -165,7 +165,7 @@ final class Alg_Woocommerce_Crowdfunding {
 		$settings   = array( '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_crowdfunding' ) . '">' .
 			__( 'Settings', 'woocommerce' ) . '</a>' );
 		$unlock_all = apply_filters( 'alg_crowdfunding_option', array(
-			'<a href="' . esc_url( 'https://wpfactory.com/item/crowdfunding-woocommerce-wordpress-plugin/' ) . '">' .
+			'<a href="' . esc_url( 'https://wpwham.com/products/crowdfunding-for-woocommerce/' ) . '">' .
 				__( 'Unlock all', 'crowdfunding-for-woocommerce' ) . '</a>',
 		), 'settings_array' );
 		return array_merge( $settings, $unlock_all, $links );

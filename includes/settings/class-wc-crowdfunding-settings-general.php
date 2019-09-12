@@ -117,7 +117,7 @@ class Alg_WC_Crowdfunding_Settings_General extends Alg_WC_Crowdfunding_Settings_
 			array(
 				'title'     => __( 'WooCommerce Crowdfunding', 'crowdfunding-for-woocommerce' ),
 				'desc'      => '<strong>' . __( 'Enable plugin', 'crowdfunding-for-woocommerce' ) . '</strong>',
-				'desc_tip'  => '<a target="_blank" href="https://wpfactory.com/item/crowdfunding-woocommerce-wordpress-plugin/">' .
+				'desc_tip'  => '<a target="_blank" href="https://wpwham.com/products/crowdfunding-for-woocommerce/">' .
 					__( 'Crowdfunding for WooCommerce plugin', 'crowdfunding-for-woocommerce' ) . '</a>' .
 						( '' != get_option( 'alg_woocommerce_crowdfunding_version', '' ) ? ' v' . get_option( 'alg_woocommerce_crowdfunding_version', '' ) : '' ),
 				'id'        => 'alg_woocommerce_crowdfunding_enabled',

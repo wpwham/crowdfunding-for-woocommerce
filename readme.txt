@@ -66,7 +66,7 @@ When displaying crowdfunding data for the product, you should use plugin's short
 
 = Feedback =
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
-* Visit the [Crowdfunding for WooCommerce plugin page](https://wpfactory.com/item/crowdfunding-woocommerce-wordpress-plugin/).
+* Visit the [Crowdfunding for WooCommerce plugin page](https://wpwham.com/products/crowdfunding-for-woocommerce/).
 
 == Installation ==
 
