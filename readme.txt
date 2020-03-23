@@ -2,8 +2,8 @@
 Contributors: wpwham
 Tags: woocommerce, crowdfunding
 Requires at least: 4.4
-Tested up to: 5.3
-Stable tag: 3.1.3
+Tested up to: 5.4
+Stable tag: 3.1.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -76,6 +76,9 @@ When displaying crowdfunding data for the product, you should use plugin's short
 
 == Changelog ==
 
+= 3.1.4 - 2020-03-23 =
+* UPDATE: bump tested versions
+
 = 3.1.3 - 2020-02-23 =
 * UPDATE: bump tested versions
 
@@ -94,7 +97,7 @@ When displaying crowdfunding data for the product, you should use plugin's short
 
 = 3.0.1 - 2019-05-22 =
 * Dev - Open Pricing - "Override Button Label on Archive Pages" options added.
-* Tested up to: 5.3.
+* Tested up to: 5.4.
 
 = 3.0.0 - 2019-05-07 =
 * Fix - Open Pricing - Fixed for variable products (including when "Radio Buttons for Variable Products" option is enabled).
