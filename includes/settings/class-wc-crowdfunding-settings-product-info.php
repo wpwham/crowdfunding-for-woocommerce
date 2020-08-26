@@ -2,9 +2,10 @@
 /**
  * Crowdfunding for WooCommerce - Product Info Section Settings
  *
- * @version 3.0.0
+ * @version 3.1.6
  * @since   1.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -29,7 +30,7 @@ class Alg_WC_Crowdfunding_Settings_Product_Info extends Alg_WC_Crowdfunding_Sett
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.0.0
+	 * @version 3.1.6
 	 */
 	public static function get_settings() {
 

@@ -2,9 +2,10 @@
 /**
  * Crowdfunding for WooCommerce - Open Pricing Section Settings
  *
- * @version 3.0.2
+ * @version 3.1.6
  * @since   2.2.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -30,7 +31,7 @@ class Alg_WC_Crowdfunding_Settings_Open_Pricing extends Alg_WC_Crowdfunding_Sett
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.0.2
+	 * @version 3.1.6
 	 * @since   2.2.0
 	 */
 	public static function get_settings() {
