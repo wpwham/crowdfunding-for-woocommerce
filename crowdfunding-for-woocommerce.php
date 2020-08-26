@@ -186,6 +186,60 @@ final class Alg_Woocommerce_Crowdfunding {
 	}
 
 	/**
+	 * add settings to WC status report
+	 *
+	 * @version 3.1.6
+	 * @since   3.1.6
+	 * @author  WP Wham
+	 */
+	public static function add_settings_to_status_report() {
+		#region add_settings_to_status_report
+		$protected_settings      = array( 'wpwham_woocommerce_crowdfunding_license' );
+		$settings_general        = Alg_WC_Crowdfunding_Settings_General::get_settings();
+		$settings_product_info   = Alg_WC_Crowdfunding_Settings_Product_Info::get_settings();
+		$settings_open_pricing   = Alg_WC_Crowdfunding_Settings_Open_Pricing::get_settings();
+		$settings_user_campaigns = Alg_WC_Crowdfunding_Settings_Product_By_User::get_settings();
+		$settings = array_merge(
+			$settings_general, $settings_product_info, $settings_open_pricing, $settings_user_campaigns
+		);
+		?>
+		<table class="wc_status_table widefat" cellspacing="0">
+			<thead>
+				<tr>
+					<th colspan="3" data-export-label="Crowdfunding Settings"><h2><?php esc_html_e( 'Crowdfunding Settings', 'crowdfunding-for-woocommerce' ); ?></h2></th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ( $settings as $setting ): ?>
+				<?php 
+				if ( in_array( $setting['type'], array( 'title', 'sectionend' ) ) ) { 
+					continue;
+				}
+				if ( isset( $setting['title'] ) ) {
+					$title = $setting['title'];
+				} elseif ( isset( $setting['desc'] ) ) {
+					$title = $setting['desc'];
+				} else {
+					$title = $setting['id'];
+				}
+				$value = get_option( $setting['id'] ); 
+				if ( in_array( $setting['id'], $protected_settings ) ) {
+					$value = $value > '' ? '(set)' : 'not set';
+				}
+				?>
+				<tr>
+					<td data-export-label="<?php echo esc_attr( $title ); ?>"><?php esc_html_e( $title, 'crowdfunding-for-woocommerce' ); ?>:</td>
+					<td class="help">&nbsp;</td>
+					<td><?php echo is_array( $value ) ? print_r( $value, true ) : $value; ?></td>
+				</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+		<?php
+		#endregion add_settings_to_status_report
+	}
+
+	/**
 	 * admin.
 	 *
 	 * @version 3.0.0
@@ -208,6 +262,7 @@ final class Alg_Woocommerce_Crowdfunding {
 		$this->settings['product-info']    = require_once( 'includes/settings/class-wc-crowdfunding-settings-product-info.php' );
 		$this->settings['open-pricing']    = require_once( 'includes/settings/class-wc-crowdfunding-settings-open-pricing.php' );
 		$this->settings['product-by-user'] = require_once( 'includes/settings/class-wc-crowdfunding-settings-product-by-user.php' );
+		add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
 
 		// Version updated
 		if ( get_option( 'alg_woocommerce_crowdfunding_version', '' ) !== $this->version ) {

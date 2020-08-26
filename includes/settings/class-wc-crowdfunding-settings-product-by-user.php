@@ -33,7 +33,7 @@ class Alg_WC_Crowdfunding_Settings_Product_By_User extends Alg_WC_Crowdfunding_S
 	 * @version 3.0.0
 	 * @since   2.3.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 
 		global $wp_roles;
 		$all_roles = ( isset( $wp_roles ) && is_object( $wp_roles ) ) ? $wp_roles->roles : array();

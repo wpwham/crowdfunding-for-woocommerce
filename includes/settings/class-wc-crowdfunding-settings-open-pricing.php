@@ -33,7 +33,7 @@ class Alg_WC_Crowdfunding_Settings_Open_Pricing extends Alg_WC_Crowdfunding_Sett
 	 * @version 3.0.2
 	 * @since   2.2.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$settings = array(
 			array(
 				'title'    => __( 'Labels and Messages', 'crowdfunding-for-woocommerce' ),

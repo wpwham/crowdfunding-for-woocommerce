@@ -31,7 +31,7 @@ class Alg_WC_Crowdfunding_Settings_Product_Info extends Alg_WC_Crowdfunding_Sett
 	 *
 	 * @version 3.0.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 
 		$settings = array(
 

@@ -74,7 +74,7 @@ class Alg_WC_Crowdfunding_Settings_General extends Alg_WC_Crowdfunding_Settings_
 	 * @version 3.0.0
 	 * @since   1.0.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 
 		$desc = '';
 		if ( 'manual' != get_option( 'alg_crowdfunding_products_data_update', 'fifthteen' ) ) {
