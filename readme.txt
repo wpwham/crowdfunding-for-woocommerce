@@ -3,7 +3,7 @@ Contributors: wpwham
 Tags: woocommerce, crowdfunding
 Requires at least: 4.4
 Tested up to: 5.5
-Stable tag: 3.1.6
+Stable tag: 3.1.7
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -75,6 +75,9 @@ When displaying crowdfunding data for the product, you should use plugin's short
 3. Start by visiting plugin settings at "WooCommerce > Settings > Crowdfunding". Then try adding or editing a product.
 
 == Changelog ==
+
+= 3.1.7 - 2020-09-17 =
+* UPDATE: bump tested versions
 
 = 3.1.6 - 2020-08-26 =
 * UPDATE: display our settings in WC status report.
