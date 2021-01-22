@@ -55,6 +55,12 @@ jQuery(document).ready(function() {
 				to: {color: '#ED6A5A'},
 				step: (state, bar) => {
 					bar.setText(Math.round(bar.value() * 100) + ' %');
+					// Notice, when bar.value() > 1 set trail to the same color as stroke
+					// source: https://github.com/kimmobrunfeldt/progressbar.js/issues/192
+					if (bar.value() > 1) {
+						bar.trail.setAttribute('stroke', the_color);
+						bar.trail.setAttribute('stroke-width', 4);
+					}
 				}
 			});
 			bar.animate(jQuery(this).attr('value'));
@@ -71,13 +77,19 @@ jQuery(document).ready(function() {
 				to: { color: '#333', width: 4 },
 				// Set default step function for all animate calls
 				step: function(state, circle) {
-					circle.path.setAttribute('stroke', state.color);
+					circle.path.setAttribute('stroke', the_color);
 					circle.path.setAttribute('stroke-width', state.width);
 					var value = Math.round(circle.value() * 100);
 					if (value === 0) {
 						circle.setText('');
 					} else {
 						circle.setText(value + '%');
+					}
+					// Notice, when circle.value() > 1 set trail to the same color as stroke
+					// source: https://github.com/kimmobrunfeldt/progressbar.js/issues/192
+					if (circle.value() > 1) {
+						circle.trail.setAttribute('stroke', the_color);
+						circle.trail.setAttribute('stroke-width', state.width);
 					}
 				}
 			});
