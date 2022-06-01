@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Crowdfunding for WooCommerce\n"
-"POT-Creation-Date: 2020-08-26 01:37-0700\n"
+"POT-Creation-Date: 2022-06-01 01:45-0700\n"
 "PO-Revision-Date: 2019-09-12 00:42-0700\n"
 "Last-Translator: \n"
 "Language-Team: WP Wham <support@wpwham.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: crowdfunding-for-woocommerce.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -20,15 +20,15 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: crowdfunding-for-woocommerce.php:166
+#: crowdfunding-for-woocommerce.php:167
 msgid "Settings"
 msgstr ""
 
-#: crowdfunding-for-woocommerce.php:169
+#: crowdfunding-for-woocommerce.php:170
 msgid "Unlock all"
 msgstr ""
 
-#: crowdfunding-for-woocommerce.php:209
+#: crowdfunding-for-woocommerce.php:210
 msgid "Crowdfunding Settings"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgstr ""
 #: includes/class-wc-crowdfunding-admin.php:174
 #: includes/class-wc-crowdfunding-admin.php:273
 #: includes/class-wc-crowdfunding.php:298
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:55
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:56
 #: includes/settings/class-wc-settings-crowdfunding.php:24
 msgid "Crowdfunding"
 msgstr ""
@@ -184,12 +184,12 @@ msgid "Affects \"Crowdfunding Campaign Ended\" email and action."
 msgstr ""
 
 #: includes/class-wc-crowdfunding-admin.php:441
-#: includes/settings/class-wc-crowdfunding-settings-general.php:213
-#: includes/settings/class-wc-crowdfunding-settings-general.php:230
-#: includes/settings/class-wc-crowdfunding-settings-general.php:237
-#: includes/settings/class-wc-crowdfunding-settings-general.php:290
-#: includes/settings/class-wc-crowdfunding-settings-general.php:299
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:144
+#: includes/settings/class-wc-crowdfunding-settings-general.php:216
+#: includes/settings/class-wc-crowdfunding-settings-general.php:233
+#: includes/settings/class-wc-crowdfunding-settings-general.php:240
+#: includes/settings/class-wc-crowdfunding-settings-general.php:293
+#: includes/settings/class-wc-crowdfunding-settings-general.php:302
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:145
 msgid "Enable"
 msgstr ""
 
@@ -222,7 +222,7 @@ msgstr ""
 
 #: includes/class-wc-crowdfunding-admin.php:507
 #: includes/class-wc-crowdfunding.php:269
-#: includes/settings/class-wc-crowdfunding-settings-general.php:159
+#: includes/settings/class-wc-crowdfunding-settings-general.php:162
 msgid "Back This Project"
 msgstr ""
 
@@ -232,7 +232,7 @@ msgstr ""
 
 #: includes/class-wc-crowdfunding-admin.php:514
 #: includes/class-wc-crowdfunding.php:285
-#: includes/settings/class-wc-crowdfunding-settings-general.php:167
+#: includes/settings/class-wc-crowdfunding-settings-general.php:170
 msgid "Read More"
 msgstr ""
 
@@ -316,37 +316,37 @@ msgid "Delete"
 msgstr ""
 
 #: includes/class-wc-crowdfunding-open-pricing.php:94
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:83
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:84
 msgid "Read more"
 msgstr ""
 
 #: includes/class-wc-crowdfunding-open-pricing.php:164
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:53
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:54
 msgid "Price is required!"
 msgstr ""
 
 #: includes/class-wc-crowdfunding-open-pricing.php:169
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:60
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:61
 msgid "Price is too low!"
 msgstr ""
 
 #: includes/class-wc-crowdfunding-open-pricing.php:176
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:67
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:68
 msgid "Price is too high!"
 msgstr ""
 
 #: includes/class-wc-crowdfunding-open-pricing.php:233
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:46
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:47
 msgid "Name Your Price"
 msgstr ""
 
 #: includes/class-wc-crowdfunding.php:235
-#: includes/settings/class-wc-crowdfunding-settings-general.php:186
+#: includes/settings/class-wc-crowdfunding-settings-general.php:189
 msgid "<strong>Not yet started!</strong>"
 msgstr ""
 
 #: includes/class-wc-crowdfunding.php:238
-#: includes/settings/class-wc-crowdfunding-settings-general.php:196
+#: includes/settings/class-wc-crowdfunding-settings-general.php:199
 msgid "<strong>Ended!</strong>"
 msgstr ""
 
@@ -433,515 +433,517 @@ msgstr ""
 msgid "Crowdfunding campaign ended: %s"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:25
+#: includes/settings/class-wc-crowdfunding-settings-general.php:26
 msgid "General"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:63
+#: includes/settings/class-wc-crowdfunding-settings-general.php:64
 msgid "This may take a while... Are you sure?"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:84
+#: includes/settings/class-wc-crowdfunding-settings-general.php:85
 #, php-format
 msgid "%s till next update."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:87
+#: includes/settings/class-wc-crowdfunding-settings-general.php:88
 #, php-format
 msgid "%s seconds till next update."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:95
+#: includes/settings/class-wc-crowdfunding-settings-general.php:96
 #, php-format
 msgid "Previous update triggered at %s."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:101
+#: includes/settings/class-wc-crowdfunding-settings-general.php:102
 msgctxt "Order status"
 msgid "Pending Payment"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:102
+#: includes/settings/class-wc-crowdfunding-settings-general.php:103
 msgctxt "Order status"
 msgid "Processing"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:103
+#: includes/settings/class-wc-crowdfunding-settings-general.php:104
 msgctxt "Order status"
 msgid "On Hold"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:104
+#: includes/settings/class-wc-crowdfunding-settings-general.php:105
 msgctxt "Order status"
 msgid "Completed"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:105
+#: includes/settings/class-wc-crowdfunding-settings-general.php:106
 msgctxt "Order status"
 msgid "Cancelled"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:106
+#: includes/settings/class-wc-crowdfunding-settings-general.php:107
 msgctxt "Order status"
 msgid "Refunded"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:107
+#: includes/settings/class-wc-crowdfunding-settings-general.php:108
 msgctxt "Order status"
 msgid "Failed"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:113
+#: includes/settings/class-wc-crowdfunding-settings-general.php:114
 msgid "Crowdfunding Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:118
-msgid "WooCommerce Crowdfunding"
+#. Plugin Name of the plugin/theme
+#: includes/settings/class-wc-crowdfunding-settings-general.php:119
+#: includes/settings/class-wc-crowdfunding-settings-general.php:122
+msgid "Crowdfunding for WooCommerce"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:119
+#: includes/settings/class-wc-crowdfunding-settings-general.php:120
 msgid "Enable plugin"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:121
-msgid "Crowdfunding for WooCommerce plugin"
+#: includes/settings/class-wc-crowdfunding-settings-general.php:125
+msgid "Documentation"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:133
+#: includes/settings/class-wc-crowdfunding-settings-general.php:136
 msgid "Status Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:138
+#: includes/settings/class-wc-crowdfunding-settings-general.php:141
 msgid "Order Statuses to Include in Calculations"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:151
+#: includes/settings/class-wc-crowdfunding-settings-general.php:154
 msgid "Crowdfunding Buttons Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:156
+#: includes/settings/class-wc-crowdfunding-settings-general.php:159
 msgid "Default Button Label on Single Product Page"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:157
-#: includes/settings/class-wc-crowdfunding-settings-general.php:165
+#: includes/settings/class-wc-crowdfunding-settings-general.php:160
+#: includes/settings/class-wc-crowdfunding-settings-general.php:168
 msgid "You can change this in product edit on per product basis"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:164
+#: includes/settings/class-wc-crowdfunding-settings-general.php:167
 msgid "Default Button Label on Archive Pages"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:177
+#: includes/settings/class-wc-crowdfunding-settings-general.php:180
 msgid "Crowdfunding Messages Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:182
+#: includes/settings/class-wc-crowdfunding-settings-general.php:185
 msgid "Message on Product Not Yet Started"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:183
-#: includes/settings/class-wc-crowdfunding-settings-general.php:193
+#: includes/settings/class-wc-crowdfunding-settings-general.php:186
+#: includes/settings/class-wc-crowdfunding-settings-general.php:196
 #, php-format
 msgid "You can use shortcodes here. For example: %s."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:192
+#: includes/settings/class-wc-crowdfunding-settings-general.php:195
 msgid "Message on Product Ended"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:207
+#: includes/settings/class-wc-crowdfunding-settings-general.php:210
 msgid "Variable Add to Cart Form Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:212
+#: includes/settings/class-wc-crowdfunding-settings-general.php:215
 msgid "Radio Buttons for Variable Products"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:224
+#: includes/settings/class-wc-crowdfunding-settings-general.php:227
 msgid "Ending Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:229
+#: includes/settings/class-wc-crowdfunding-settings-general.php:232
 msgid "End On Time Ended"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:236
+#: includes/settings/class-wc-crowdfunding-settings-general.php:239
 msgid "End On Goal Reached"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:243
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:183
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:190
+#: includes/settings/class-wc-crowdfunding-settings-general.php:246
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:184
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:191
 #, php-format
 msgid "Admin Email: %s"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:243
+#: includes/settings/class-wc-crowdfunding-settings-general.php:246
 msgid "Campaign Ended"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:244
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:184
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:191
+#: includes/settings/class-wc-crowdfunding-settings-general.php:247
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:185
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:192
 msgid "Send"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:255
+#: includes/settings/class-wc-crowdfunding-settings-general.php:258
 msgid "Products Data Update Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:261
+#: includes/settings/class-wc-crowdfunding-settings-general.php:264
 msgid "Update Rate"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:267
+#: includes/settings/class-wc-crowdfunding-settings-general.php:270
 msgid "Update every minute"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:268
+#: includes/settings/class-wc-crowdfunding-settings-general.php:271
 msgid "Update every fifteen minutes"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:269
+#: includes/settings/class-wc-crowdfunding-settings-general.php:272
 msgid "Update hourly"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:270
+#: includes/settings/class-wc-crowdfunding-settings-general.php:273
 msgid "Update twice daily"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:271
+#: includes/settings/class-wc-crowdfunding-settings-general.php:274
 msgid "Update daily"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:272
+#: includes/settings/class-wc-crowdfunding-settings-general.php:275
 msgid "Update weekly"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:273
+#: includes/settings/class-wc-crowdfunding-settings-general.php:276
 msgid "Realtime (not recommended)"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:276
+#: includes/settings/class-wc-crowdfunding-settings-general.php:279
 msgid "Update data now"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:284
+#: includes/settings/class-wc-crowdfunding-settings-general.php:287
 msgid "Advanced Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:289
+#: includes/settings/class-wc-crowdfunding-settings-general.php:292
 msgid "Log"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:291
+#: includes/settings/class-wc-crowdfunding-settings-general.php:294
 #, php-format
 msgid "Log will be saved in %s."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:292
+#: includes/settings/class-wc-crowdfunding-settings-general.php:295
 msgid "WooCommerce > Status > Logs"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:298
+#: includes/settings/class-wc-crowdfunding-settings-general.php:301
 msgid "Add \"Crowdfunding Data\" Column"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:300
+#: includes/settings/class-wc-crowdfunding-settings-general.php:303
 msgid "Adds \"Crowdfunding Data\" column to the admin products list."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:306
+#: includes/settings/class-wc-crowdfunding-settings-general.php:309
 msgid "Data"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:307
+#: includes/settings/class-wc-crowdfunding-settings-general.php:310
 msgid "You can use shortcodes and/or HTML here."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:308
+#: includes/settings/class-wc-crowdfunding-settings-general.php:311
 #, php-format
 msgid "Ignored if %s option above is not enabled."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-general.php:309
+#: includes/settings/class-wc-crowdfunding-settings-general.php:312
 msgid "Add \"Crowdfunding Data\" column"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:25
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:26
 msgid "Open Pricing (Name Your Price)"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:39
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:40
 msgid "Labels and Messages"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:44
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:45
 msgid "Frontend Label"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:51
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:52
 msgid "Message on Empty Price"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:58
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:59
 msgid "Message on Price too Low"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:65
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:66
 msgid "Message on Price too High"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:72
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:73
 msgid "Override Button Label on Archive Pages"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:73
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:74
 msgid "Override"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:74
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:75
 msgid "If disabled, will use standard label as set for crowdfunding products."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:80
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:81
 msgid "Label"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:81
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:82
 msgid "Ignored if \"Override Button Label on Archive Pages\" is not enabled."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:91
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:92
 msgid "Template"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:96
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:97
 msgid "Frontend Template"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:107
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:108
 msgid "General Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:112
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:113
 msgid "Hide Quantity Input Field"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:113
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:121
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:188
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:114
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:122
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:189
 msgid "Hide"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:114
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:115
 msgid "Hides quantity input field for the open pricing crowdfunding products."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:120
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:121
 msgid "Hide Original Price"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:122
+#: includes/settings/class-wc-crowdfunding-settings-open-pricing.php:123
 msgid ""
 "Hides original WooCommerce price for the open pricing crowdfunding products."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:25
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:26
 msgid "User Campaigns"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:43
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:44
 msgid "Guest"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:65
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:66
 msgid "Additional Fields"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:73
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:74
 msgid "Is Required"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:85
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:86
 msgid "User Campaigns Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:87
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:88
 #, php-format
 msgid "Use %s shortcode to add form for your users."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:96
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:97
 msgid "Form Fields"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:98
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:99
 msgid "<em>Title</em> field is always enabled and required."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:110
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:111
 msgid "More Options"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:115
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:116
 msgid "User Visibility"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:116
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:117
 msgid ""
 "Limit form to selected user roles only. Leave empty to show to all users."
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:124
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:125
 msgid "Campaign (Product) Type"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:130
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:131
 msgid "Simple"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:131
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:132
 msgid "Open Pricing"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:135
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:136
 msgid "Campaign Status"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:143
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:144
 msgid "Require Unique Title"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:150
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:151
 msgid "Add \"Campaigns\" Tab to User's My Account Page"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:151
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:46
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:89
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:138
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:152
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:47
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:90
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:139
 #: includes/shortcodes/class-wc-crowdfunding-shortcodes-products-add-form.php:442
 msgid "Add"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:157
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:158
 msgid "Add Edit Campaign Button"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:163
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:164
 msgid "Add Delete Campaign Button"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:169
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:170
 msgid "Message: Campaign Successfully Added"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:171
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:172
 #: includes/shortcodes/class-wc-crowdfunding-shortcodes-products-add-form.php:287
 msgid "\"%product_title%\" successfully added!"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:176
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:177
 msgid "Message: Campaign Successfully Edited"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:178
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:179
 #: includes/shortcodes/class-wc-crowdfunding-shortcodes-products-add-form.php:294
 msgid "\"%product_title%\" successfully edited!"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:183
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:184
 msgid "Campaign Added"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:190
+#: includes/settings/class-wc-crowdfunding-settings-product-by-user.php:191
 msgid "Campaign Edited"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:24
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:25
 msgid "Product Info"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:39
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:40
 msgid "Custom Product Tab"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:45
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:46
 msgid "Add Product Info to Custom Tab on Single Product Page"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:53
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:54
 msgid "Custom Tab Title"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:60
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:96
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:145
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:61
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:97
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:146
 msgid "Info"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:69
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:118
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:168
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:70
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:119
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:169
 msgid "Order"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:82
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:83
 msgid "Custom Product Info"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:88
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:89
 msgid "Add Product Info to Single Product Page"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:105
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:154
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:106
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:155
 msgid "Position"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:111
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:112
 msgid "Before single product summary"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:112
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:113
 msgid "After single product summary"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:113
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:114
 msgid "Inside single product summary"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:131
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:132
 msgid "Custom Product Info - Category View"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:137
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:138
 msgid "Add Product Info to Archives Pages"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:160
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:161
 msgid "Before product"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:161
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:162
 msgid "Before product title"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:162
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:163
 msgid "After product"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:163
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:164
 msgid "After product title"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:181
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:182
 msgid "Product Price"
 msgstr ""
 
-#: includes/settings/class-wc-crowdfunding-settings-product-info.php:187
+#: includes/settings/class-wc-crowdfunding-settings-product-info.php:188
 msgid "Hide Main Price for Variable Crowdfunding Products"
 msgstr ""
 
@@ -1080,10 +1082,6 @@ msgstr ""
 
 #: includes/templates/alg-add-to-cart-variable.php:26
 msgid "This product is currently out of stock and unavailable."
-msgstr ""
-
-#. Plugin Name of the plugin/theme
-msgid "Crowdfunding for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
