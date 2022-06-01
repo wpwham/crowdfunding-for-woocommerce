@@ -254,7 +254,7 @@ class Alg_WC_Crowdfunding_Admin {
 		if ( ! isset( $_GET['alg_admin_notice'] ) ) {
 			return;
 		}
-		?><div class="error"><p><?php echo '<div class="message">' . sprintf( __( 'Free plugin\'s version is limited to 3 crowdfunding products enabled at the same time. Please visit <a href="%s" target="_blank">plugin\'s page</a> for more information.', 'crowdfunding-for-woocommerce' ), 'https://wpwham.com/products/crowdfunding-for-woocommerce/' ) . '</div>'; ?></p></div><?php
+		?><div class="error"><p><?php echo '<div class="message">' . sprintf( __( 'Free plugin\'s version is limited to 3 crowdfunding products enabled at the same time. Please visit <a href="%s" target="_blank">plugin\'s page</a> for more information.', 'crowdfunding-for-woocommerce' ), 'https://wpwham.com/products/crowdfunding-for-woocommerce/?utm_source=admin_notice&utm_campaign=free&utm_medium=crowdfunding' ) . '</div>'; ?></p></div><?php
 	}
 
 	/**

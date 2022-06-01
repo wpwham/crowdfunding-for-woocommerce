@@ -166,7 +166,7 @@ final class Alg_Woocommerce_Crowdfunding {
 		$settings   = array( '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_crowdfunding' ) . '">' .
 			__( 'Settings', 'woocommerce' ) . '</a>' );
 		$unlock_all = apply_filters( 'alg_crowdfunding_option', array(
-			'<a href="' . esc_url( 'https://wpwham.com/products/crowdfunding-for-woocommerce/' ) . '">' .
+			'<a href="' . esc_url( 'https://wpwham.com/products/crowdfunding-for-woocommerce/?utm_source=plugins_page&utm_campaign=free&utm_medium=crowdfunding' ) . '">' .
 				__( 'Unlock all', 'crowdfunding-for-woocommerce' ) . '</a>',
 		), 'settings_array' );
 		return array_merge( $settings, $unlock_all, $links );
