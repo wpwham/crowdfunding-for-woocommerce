@@ -116,11 +116,13 @@ class Alg_WC_Crowdfunding_Settings_General extends Alg_WC_Crowdfunding_Settings_
 				'id'        => 'alg_woocommerce_crowdfunding_options',
 			),
 			array(
-				'title'     => __( 'WooCommerce Crowdfunding', 'crowdfunding-for-woocommerce' ),
+				'title'     => __( 'Crowdfunding for WooCommerce', 'crowdfunding-for-woocommerce' ),
 				'desc'      => '<strong>' . __( 'Enable plugin', 'crowdfunding-for-woocommerce' ) . '</strong>',
-				'desc_tip'  => '<a target="_blank" href="https://wpwham.com/products/crowdfunding-for-woocommerce/">' .
-					__( 'Crowdfunding for WooCommerce plugin', 'crowdfunding-for-woocommerce' ) . '</a>' .
-						( '' != get_option( 'alg_woocommerce_crowdfunding_version', '' ) ? ' v' . get_option( 'alg_woocommerce_crowdfunding_version', '' ) : '' ),
+				'desc_tip' => 
+					__( 'Crowdfunding for WooCommerce', 'crowdfunding-for-woocommerce' )
+					. ( get_option( 'alg_woocommerce_crowdfunding_version' ) ? ' v' . get_option( 'alg_woocommerce_crowdfunding_version' ) : '' ) . '.<br />'
+					. '<a href="https://wpwham.com/documentation/crowdfunding-for-woocommerce/?utm_source=documentation_link&utm_campaign=free&utm_medium=crowdfunding" target="_blank" class="button">' .
+					__( 'Documentation', 'crowdfunding-for-woocommerce' ) . '</a>',
 				'id'        => 'alg_woocommerce_crowdfunding_enabled',
 				'default'   => 'yes',
 				'type'      => 'checkbox',
