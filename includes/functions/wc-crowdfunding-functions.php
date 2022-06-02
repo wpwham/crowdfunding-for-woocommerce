@@ -2,9 +2,10 @@
 /**
  * Crowdfunding for WooCommerce - Functions
  *
- * @version 3.0.0
+ * @version 3.1.10
  * @since   2.3.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -135,10 +136,10 @@ if ( ! function_exists( 'alg_wc_crdfnd_get_product_orders_data' ) ) {
 	/**
 	 * alg_wc_crdfnd_get_product_orders_data.
 	 *
-	 * @version 3.0.0
+	 * @version 3.1.10
 	 * @since   2.3.0
 	 */
-	function alg_wc_crdfnd_get_product_orders_data( $return_value = 'total_orders', $atts ) {
+	function alg_wc_crdfnd_get_product_orders_data( $return_value = 'total_orders', $atts = array() ) {
 		$product_id = isset( $atts['product_id'] ) ? $atts['product_id'] : get_the_ID();
 		if ( ! $product_id ) {
 			return '';
@@ -162,11 +163,11 @@ if ( ! function_exists( 'alg_wc_crdfnd_calculate_product_orders_data' ) ) {
 	/**
 	 * alg_wc_crdfnd_calculate_product_orders_data.
 	 *
-	 * @version 3.0.0
+	 * @version 3.1.10
 	 * @since   1.0.0
 	 * @todo    [dev] `$item['line_tax']`
 	 */
-	function alg_wc_crdfnd_calculate_product_orders_data( $return_value = 'total_orders', $product_id ) {
+	function alg_wc_crdfnd_calculate_product_orders_data( $return_value = 'total_orders', $product_id = 0 ) {
 		// Get product
 		$the_product = wc_get_product( $product_id );
 		if ( ! $the_product ) {
