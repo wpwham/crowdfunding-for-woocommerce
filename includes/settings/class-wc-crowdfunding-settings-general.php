@@ -2,7 +2,7 @@
 /**
  * Crowdfunding for WooCommerce - General Section Settings
  *
- * @version 3.1.6
+ * @version 3.1.10
  * @since   1.0.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
@@ -72,7 +72,7 @@ class Alg_WC_Crowdfunding_Settings_General extends Alg_WC_Crowdfunding_Settings_
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.1.6
+	 * @version 3.1.10
 	 * @since   1.0.0
 	 */
 	public static function get_settings() {

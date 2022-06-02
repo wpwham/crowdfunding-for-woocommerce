@@ -2,9 +2,10 @@
 /**
  * Crowdfunding for WooCommerce - Admin
  *
- * @version 3.0.0
+ * @version 3.1.10
  * @since   1.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -247,7 +248,7 @@ class Alg_WC_Crowdfunding_Admin {
 	/**
 	 * admin_notices.
 	 *
-	 * @version 2.4.0
+	 * @version 3.1.10
 	 * @since   2.0.0
 	 */
 	function admin_notices() {

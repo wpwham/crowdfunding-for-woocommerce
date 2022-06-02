@@ -2,9 +2,10 @@
 /**
  * Crowdfunding for WooCommerce - Functions
  *
- * @version 3.0.0
+ * @version 3.1.10
  * @since   2.3.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -135,7 +136,7 @@ if ( ! function_exists( 'alg_wc_crdfnd_get_product_orders_data' ) ) {
 	/**
 	 * alg_wc_crdfnd_get_product_orders_data.
 	 *
-	 * @version 3.0.0
+	 * @version 3.1.10
 	 * @since   2.3.0
 	 */
 	function alg_wc_crdfnd_get_product_orders_data( $return_value = 'total_orders', $atts = array() ) {
@@ -162,7 +163,7 @@ if ( ! function_exists( 'alg_wc_crdfnd_calculate_product_orders_data' ) ) {
 	/**
 	 * alg_wc_crdfnd_calculate_product_orders_data.
 	 *
-	 * @version 3.0.0
+	 * @version 3.1.10
 	 * @since   1.0.0
 	 * @todo    [dev] `$item['line_tax']`
 	 */
