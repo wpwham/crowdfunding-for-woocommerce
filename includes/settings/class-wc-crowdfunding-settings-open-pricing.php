@@ -2,7 +2,7 @@
 /**
  * Crowdfunding for WooCommerce - Open Pricing Section Settings
  *
- * @version 3.1.6
+ * @version 3.1.11
  * @since   2.2.0
  * @author  Algoritmika Ltd.
  * @author  WP Wham
