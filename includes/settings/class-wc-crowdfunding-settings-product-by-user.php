@@ -13,7 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 if ( ! class_exists( 'Alg_WC_Crowdfunding_Settings_Product_By_User' ) ) :
 
 class Alg_WC_Crowdfunding_Settings_Product_By_User extends Alg_WC_Crowdfunding_Settings_Section {
-
+	
+	public $id   = '';
+	public $desc = '';
+	
 	/**
 	 * Constructor.
 	 *

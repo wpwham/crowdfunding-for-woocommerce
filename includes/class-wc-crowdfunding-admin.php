@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'Alg_WC_Crowdfunding_Admin' ) ) :
 
 class Alg_WC_Crowdfunding_Admin {
+	
+	public $id = '';
 
 	/**
 	 * Constructor.

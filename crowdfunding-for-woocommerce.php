@@ -43,7 +43,10 @@ if ( ! class_exists( 'Alg_Woocommerce_Crowdfunding' ) ) :
  * @version 3.1.10
  */
 final class Alg_Woocommerce_Crowdfunding {
-
+	
+	public $core     = null;
+	public $settings = null;
+	
 	/**
 	 * Plugin version.
 	 *

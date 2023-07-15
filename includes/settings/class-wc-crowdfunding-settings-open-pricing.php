@@ -13,7 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'Alg_WC_Crowdfunding_Settings_Open_Pricing' ) ) :
 
 class Alg_WC_Crowdfunding_Settings_Open_Pricing extends Alg_WC_Crowdfunding_Settings_Section {
-
+	
+	public $id   = '';
+	public $desc = '';
+	
 	/**
 	 * Constructor.
 	 *
