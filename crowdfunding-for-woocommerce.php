@@ -10,7 +10,7 @@ Text Domain: crowdfunding-for-woocommerce
 Domain Path: /langs
 WC requires at least: 3.0
 WC tested up to: 7.8
-Copyright: © 2018-2023 WP Wham. All rights reserved.
+Copyright: Â© 2018-2023 WP Wham. All rights reserved.
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -33,6 +33,12 @@ if ( 'crowdfunding-for-woocommerce.php' === basename( __FILE__ ) ) {
 		( is_multisite() && array_key_exists( $plugin, get_site_option( 'active_sitewide_plugins', array() ) ) )
 	) return;
 }
+
+add_action( 'before_woocommerce_init', function() {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
 
 if ( ! class_exists( 'Alg_Woocommerce_Crowdfunding' ) ) :
 
