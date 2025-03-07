@@ -2,7 +2,7 @@
 /**
  * Crowdfunding for WooCommerce - Products Add Form Shortcodes
  *
- * @version 3.0.0
+ * @version 3.1.13
  * @since   2.3.0
  * @author  Algoritmika Ltd.
  */
@@ -220,7 +220,7 @@ class Alg_WC_Crowdfunding_Products_Add_Form_Shortcodes {
 	/**
 	 * alg_wc_crowdfunding_product_add_new.
 	 *
-	 * @version 3.0.0
+	 * @version 3.1.13
 	 * @since   2.3.0
 	 * @todo    [dev] `multipart` only if image...
 	 * @todo    [dev] (maybe) `if ( ! $is_iser_visibility_ok ) { return '<p><a href="' . wp_login_url( get_permalink() ) . '" title="' . $atts['login_text'] . '">' . $atts['login_text'] . '</a></p>'; }`
@@ -317,9 +317,9 @@ class Alg_WC_Crowdfunding_Products_Add_Form_Shortcodes {
 		}
 
 		$header_html .= '<h3>';
-		$header_html .= ( 0 == $atts['product_id'] ) ? __( 'Add New Product', 'crowdfunding-for-woocommerce' ) : __( 'Edit Product', 'crowdfunding-for-woocommerce' );
+		$header_html .= ( 0 == $atts['product_id'] ) ? esc_html__( 'Add New Product', 'crowdfunding-for-woocommerce' ) : __( 'Edit Product', 'crowdfunding-for-woocommerce' );
 		$header_html .= '</h3>';
-		$header_html .= '<form method="post" action="' . remove_query_arg( array( 'alg_wc_crowdfunding_edit_product_image_delete', 'alg_wc_crowdfunding_delete_product' ) ) . '" enctype="multipart/form-data">';
+		$header_html .= '<form method="post" action="' . esc_url( remove_query_arg( array( 'alg_wc_crowdfunding_edit_product_image_delete', 'alg_wc_crowdfunding_delete_product' ) ) ) . '" enctype="multipart/form-data">';
 
 		$required_mark_html_template = '&nbsp;<abbr class="required" title="required">*</abbr>';
 
