@@ -317,9 +317,9 @@ class Alg_WC_Crowdfunding_Products_Add_Form_Shortcodes {
 		}
 
 		$header_html .= '<h3>';
-		$header_html .= ( 0 == $atts['product_id'] ) ? __( 'Add New Product', 'crowdfunding-for-woocommerce' ) : __( 'Edit Product', 'crowdfunding-for-woocommerce' );
+		$header_html .= ( 0 == $atts['product_id'] ) ? esc_html__( 'Add New Product', 'crowdfunding-for-woocommerce' ) : __( 'Edit Product', 'crowdfunding-for-woocommerce' );
 		$header_html .= '</h3>';
-		$header_html .= '<form method="post" action="' . remove_query_arg( array( 'alg_wc_crowdfunding_edit_product_image_delete', 'alg_wc_crowdfunding_delete_product' ) ) . '" enctype="multipart/form-data">';
+		$header_html .= '<form method="post" action="' . esc_url( remove_query_arg( array( 'alg_wc_crowdfunding_edit_product_image_delete', 'alg_wc_crowdfunding_delete_product' ) ) ) . '" enctype="multipart/form-data">';
 
 		$required_mark_html_template = '&nbsp;<abbr class="required" title="required">*</abbr>';
 
