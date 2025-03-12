@@ -88,7 +88,7 @@ final class Alg_Woocommerce_Crowdfunding {
 	function __construct() {
 
 		// Set up localisation
-		load_plugin_textdomain( 'crowdfunding-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		add_action( 'init', array( $this, 'load_localization' ) );
 
 		// Include required files
 		$this->includes();
@@ -111,6 +111,13 @@ final class Alg_Woocommerce_Crowdfunding {
 				add_action( 'init',               array( $this, 'register_admin_scripts' ) );
 			}
 		}
+	}
+			
+	/**
+	 * @since   3.1.14
+	 */
+	public function load_localization() {
+		load_plugin_textdomain( 'crowdfunding-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 	}
 
 	/**
