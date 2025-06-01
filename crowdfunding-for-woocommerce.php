@@ -3,7 +3,7 @@
 Plugin Name: Crowdfunding for WooCommerce
 Plugin URI: https://wpwham.com/products/crowdfunding-for-woocommerce/
 Description: Crowdfunding products for WooCommerce.
-Version: 3.1.13
+Version: 3.1.14
 Author: WP Wham
 Author URI: https://wpwham.com/
 Text Domain: crowdfunding-for-woocommerce
@@ -44,7 +44,7 @@ if ( ! class_exists( 'Alg_Woocommerce_Crowdfunding' ) ) :
  * Main Alg_Woocommerce_Crowdfunding Class
  *
  * @class   Alg_Woocommerce_Crowdfunding
- * @version 3.1.13
+ * @version 3.1.14
  */
 final class Alg_Woocommerce_Crowdfunding {
 	
@@ -57,7 +57,7 @@ final class Alg_Woocommerce_Crowdfunding {
 	 * @var   string
 	 * @since 2.3.0
 	 */
-	public $version = '3.1.13';
+	public $version = '3.1.14';
 
 	/**
 	 * @var Alg_Woocommerce_Crowdfunding The single instance of the class
@@ -82,7 +82,7 @@ final class Alg_Woocommerce_Crowdfunding {
 	/**
 	 * Alg_Woocommerce_Crowdfunding Constructor.
 	 *
-	 * @version 2.9.0
+	 * @version 3.1.14
 	 * @access  public
 	 */
 	function __construct() {
