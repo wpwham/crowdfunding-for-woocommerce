@@ -100,7 +100,7 @@ class Alg_WC_Crowdfunding_Shortcodes_Progress_Bar extends Alg_WC_Crowdfunding_Sh
 		// Forming progress bar attributes
 		$bar_attributes = '';
 		foreach ( $atts as $key => $value ) {
-			$bar_attributes .= ' ' . $key . '="' . $value . '"';
+			$bar_attributes .= ' ' . esc_attr( $key ) . '="' . esc_attr( $value ) . '"';
 		}
 		// Forming the progress bar
 		return '<div class="alg-progress-bar"' . $bar_attributes . '>' . '</div>';
