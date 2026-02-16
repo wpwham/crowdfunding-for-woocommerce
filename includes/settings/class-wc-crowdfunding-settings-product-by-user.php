@@ -26,7 +26,10 @@ class Alg_WC_Crowdfunding_Settings_Product_By_User extends Alg_WC_Crowdfunding_S
 	function __construct() {
 
 		$this->id    = 'product_by_user';
-		$this->desc  = __( 'User Campaigns', 'crowdfunding-for-woocommerce' );
+		$this->desc  = 'User Campaigns';
+		add_action( 'init', function() {
+			$this->desc = __( 'User Campaigns', 'crowdfunding-for-woocommerce' );
+		} );
 
 		parent::__construct();
 	}

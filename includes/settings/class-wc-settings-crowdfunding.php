@@ -21,7 +21,10 @@ class Alg_WC_Settings_Crowdfunding extends WC_Settings_Page {
 	 */
 	function __construct() {
 		$this->id    = 'alg_crowdfunding';
-		$this->label = __( 'Crowdfunding', 'crowdfunding-for-woocommerce' );
+		$this->label = 'Crowdfunding';
+		add_action( 'init', function() {
+			$this->label = __( 'Crowdfunding', 'crowdfunding-for-woocommerce' );
+		} );
 		parent::__construct();
 		add_filter( 'woocommerce_admin_settings_sanitize_option', array( $this, 'maybe_unsanitize_option' ), PHP_INT_MAX, 3 );
 	}

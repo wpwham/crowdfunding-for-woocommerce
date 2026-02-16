@@ -26,7 +26,10 @@ class Alg_WC_Crowdfunding_Settings_Open_Pricing extends Alg_WC_Crowdfunding_Sett
 	function __construct() {
 
 		$this->id   = 'open_pricing';
-		$this->desc = __( 'Open Pricing (Name Your Price)', 'crowdfunding-for-woocommerce' );
+		$this->desc = 'Open Pricing (Name Your Price)';
+		add_action( 'init', function() {
+			$this->desc = __( 'Open Pricing (Name Your Price)', 'crowdfunding-for-woocommerce' );
+		} );
 
 		parent::__construct();
 	}

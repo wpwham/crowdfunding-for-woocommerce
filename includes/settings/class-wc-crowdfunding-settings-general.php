@@ -26,7 +26,10 @@ class Alg_WC_Crowdfunding_Settings_General extends Alg_WC_Crowdfunding_Settings_
 	function __construct() {
 
 		$this->id   = '';
-		$this->desc = __( 'General', 'crowdfunding-for-woocommerce' );
+		$this->desc = 'General';
+		add_action( 'init', function() {
+			$this->desc = __( 'General', 'crowdfunding-for-woocommerce' );
+		} );
 
 		parent::__construct();
 

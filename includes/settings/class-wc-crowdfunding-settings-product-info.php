@@ -25,7 +25,10 @@ class Alg_WC_Crowdfunding_Settings_Product_Info extends Alg_WC_Crowdfunding_Sett
 	function __construct() {
 
 		$this->id   = 'product_info';
-		$this->desc = __( 'Product Info', 'crowdfunding-for-woocommerce' );
+		$this->desc = 'Product Info';
+		add_action( 'init', function() {
+			$this->desc = __( 'Product Info', 'crowdfunding-for-woocommerce' );
+		} );
 
 		parent::__construct();
 	}
