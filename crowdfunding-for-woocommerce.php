@@ -85,39 +85,24 @@ final class Alg_Woocommerce_Crowdfunding {
 	 * @version 3.1.14
 	 * @access  public
 	 */
-	function __construct() {
-
-		// Set up localisation
-		add_action( 'init', array( $this, 'load_localization' ) );
+	public function __construct() {
 
 		// Include required files
-		$this->includes();
+		add_action( 'init', array( $this, 'includes' ) );
 
-		// Settings & Scripts
-		if ( is_admin() ) {
-			// Backend
-			$this->admin();
-		} else {
-			// Frontend
+		// Frontend
+		if ( ! is_admin() ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-
 			if (
-				'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'start_date' . '_enabled', 'no' ) ||
-				'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'start_time' . '_enabled', 'no' ) ||
-				'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'end_date'   . '_enabled', 'no' ) ||
-				'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'end_time'   . '_enabled', 'no' )
-			) {
-				add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
-				add_action( 'init',               array( $this, 'register_admin_scripts' ) );
-			}
-		}
-	}
-			
-	/**
-	 * @since   3.1.14
-	 */
-	public function load_localization() {
-		load_plugin_textdomain( 'crowdfunding-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+                'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'start_date' . '_enabled', 'no' ) ||
+                'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'start_time' . '_enabled', 'no' ) ||
+                'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'end_date'   . '_enabled', 'no' ) ||
+                'yes' === get_option( 'alg_wc_crowdfunding_product_by_user_' . 'end_time'   . '_enabled', 'no' )
+            ) {
+                add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
+                add_action( 'init',               array( $this, 'register_admin_scripts' ) );
+            }
+        }
 	}
 
 	/**
@@ -191,13 +176,19 @@ final class Alg_Woocommerce_Crowdfunding {
 	 *
 	 * @version 3.0.0
 	 */
-	function includes() {
+	public function includes() {
+		// Localization
+		load_plugin_textdomain( 'crowdfunding-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 		// Functions
 		require_once( 'includes/functions/wc-crowdfunding-functions-user-campaign-fields.php' );
 		// Product edit meta box etc.
 		require_once( 'includes/class-wc-crowdfunding-admin.php' );
 		// Core
 		$this->core = require_once( 'includes/class-wc-crowdfunding.php' );
+		// Admin
+		if ( is_admin() ) {
+			$this->admin();
+		}
 	}
 
 	/**
