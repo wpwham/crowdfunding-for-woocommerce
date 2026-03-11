@@ -103,6 +103,18 @@ final class Alg_Woocommerce_Crowdfunding {
                 add_action( 'init',               array( $this, 'register_admin_scripts' ) );
             }
         }
+
+		// Admin
+		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
+		add_action( 'admin_init',            array( $this, 'register_admin_scripts' ) );
+		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
+		add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
+
+		// Updates
+		if ( get_option( 'alg_woocommerce_crowdfunding_version', '' ) !== $this->version ) {
+			add_action( 'admin_init', array( $this, 'version_updated' ) );
+		}
 	}
 
 	/**
@@ -187,7 +199,12 @@ final class Alg_Woocommerce_Crowdfunding {
 		$this->core = require_once( 'includes/class-wc-crowdfunding.php' );
 		// Admin
 		if ( is_admin() ) {
-			$this->admin();
+			require_once( 'includes/settings/class-wc-crowdfunding-settings-section.php' );
+			$this->settings = array();
+			$this->settings['general']         = require_once( 'includes/settings/class-wc-crowdfunding-settings-general.php' );
+			$this->settings['product-info']    = require_once( 'includes/settings/class-wc-crowdfunding-settings-product-info.php' );
+			$this->settings['open-pricing']    = require_once( 'includes/settings/class-wc-crowdfunding-settings-open-pricing.php' );
+			$this->settings['product-by-user'] = require_once( 'includes/settings/class-wc-crowdfunding-settings-product-by-user.php' );
 		}
 	}
 
@@ -243,37 +260,6 @@ final class Alg_Woocommerce_Crowdfunding {
 		</table>
 		<?php
 		#endregion add_settings_to_status_report
-	}
-
-	/**
-	 * admin.
-	 *
-	 * @version 3.1.6
-	 * @since   2.9.0
-	 */
-	function admin() {
-
-		// Action links
-		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
-
-		// Scripts
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
-		add_action( 'admin_init',            array( $this, 'register_admin_scripts' ) );
-
-		// Settings
-		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
-		require_once( 'includes/settings/class-wc-crowdfunding-settings-section.php' );
-		$this->settings = array();
-		$this->settings['general']         = require_once( 'includes/settings/class-wc-crowdfunding-settings-general.php' );
-		$this->settings['product-info']    = require_once( 'includes/settings/class-wc-crowdfunding-settings-product-info.php' );
-		$this->settings['open-pricing']    = require_once( 'includes/settings/class-wc-crowdfunding-settings-open-pricing.php' );
-		$this->settings['product-by-user'] = require_once( 'includes/settings/class-wc-crowdfunding-settings-product-by-user.php' );
-		add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
-
-		// Version updated
-		if ( get_option( 'alg_woocommerce_crowdfunding_version', '' ) !== $this->version ) {
-			add_action( 'admin_init', array( $this, 'version_updated' ) );
-		}
 	}
 
 	/**
