@@ -137,7 +137,50 @@ final class Alg_Woocommerce_Crowdfunding {
 		wp_enqueue_script( 'alg-progress-bar-src', $this->plugin_url() . '/includes/js/progressbar.min.js',         array( 'jquery' ), $this->version );
 		wp_enqueue_script( 'alg-progress-bar',     $this->plugin_url() . '/includes/js/alg-progressbar.js',         array( 'jquery' ), $this->version );
 	}
-
+	
+	/**
+	 * enqueue_styles.
+	 * 
+	 * @since   3.x.x
+	 */
+	public function enqueue_styles() {
+		
+		$screen = get_current_screen();
+		
+		// check if its a page where we need this
+		if ( $screen && $screen->id === 'edit-product' ) {
+			
+			// register & enqueue a dummy handle with false as the source path
+			wp_register_style( 'wpwham-crowdfunding-admin', false );
+			wp_enqueue_style( 'wpwham-crowdfunding-admin' );
+			
+			// inject our CSS logic into the dummy handle
+			$css = "
+				/* force the parent container to overflow cleanly */
+				#posts-filter {
+					clear: both;
+					overflow-x: auto !important;
+				}
+				/* give the table breathing room if columns exceed screen width */
+				.wp-list-table.posts {
+					table-layout: auto !important;
+					width: 100% !important;
+				}
+				/* protect our column */
+				.wp-list-table .column-is_crowdfunding {
+					min-width: 110px !important;
+				}
+				.wp-list-table .column-crowdfunding_data {
+					min-width: 110px !important;
+				}
+			";
+			
+			$css = apply_filters( 'wpwham_crowdfunding_admin_custom_css', $css );
+			
+			wp_add_inline_style( 'wpwham-crowdfunding-admin', $css );
+		}
+	}
+	
 	/**
 	 * register_admin_scripts.
 	 *
