@@ -272,6 +272,7 @@ final class Alg_Woocommerce_Crowdfunding {
 		// Settings
 		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
 		require_once( 'includes/settings/class-wc-crowdfunding-settings-section.php' );
+		require_once( 'includes/class-wpwham-crowdfunding-review.php' );
 		$this->settings = array();
 		$this->settings['general']         = require_once( 'includes/settings/class-wc-crowdfunding-settings-general.php' );
 		$this->settings['product-info']    = require_once( 'includes/settings/class-wc-crowdfunding-settings-product-info.php' );
